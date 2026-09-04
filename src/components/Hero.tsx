@@ -81,22 +81,44 @@ const Hero = () => {
         {/* Profile Picture */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
-          animate={{ opacity: 1, scale: 1, rotate: 0 }}
-          transition={{ duration: 1, type: "spring", bounce: 0.4 }}
+          animate={{ 
+            opacity: 1, 
+            scale: 1, 
+            rotate: 0,
+            y: [0, -20, 0] // Floating effect
+          }}
+          transition={{ 
+            duration: 1, 
+            type: "spring", 
+            bounce: 0.4,
+            y: {
+              duration: 4,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }
+          }}
           className="flex-1 flex justify-center md:justify-end"
         >
-          <div className="relative group">
-            {/* Animated glowing border effect */}
-            <div className="absolute -inset-1 rounded-[2rem] bg-gradient-to-r from-neonCyan to-neonPurple opacity-70 blur-lg group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-glow"></div>
-
-            {/* Image Container */}
-            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-[2rem] overflow-hidden border-2 border-white/10 bg-glassBg">
+          <div className="relative group perspective-1000">
+            {/* Animated glowing border effect - rotating */}
+            <motion.div 
+              animate={{ rotate: 360 }}
+              transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+              className="absolute -inset-2 rounded-[2.5rem] bg-gradient-to-r from-neonCyan via-neonPurple to-neonCyan opacity-70 blur-xl group-hover:opacity-100 transition duration-1000"
+            ></motion.div>
+            
+            {/* Image Container with 3D hover effect */}
+            <motion.div 
+              whileHover={{ scale: 1.05, rotateX: 5, rotateY: -5 }}
+              className="relative w-64 h-[22rem] md:w-[320px] md:h-[420px] rounded-[2rem] overflow-hidden border-4 border-white/20 bg-glassBg shadow-[0_0_50px_rgba(176,38,255,0.4)]"
+              style={{ transformStyle: 'preserve-3d' }}
+            >
               <img
                 src={profilePic}
                 alt="Rajendra Tiwari"
-                className="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-500"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
               />
-            </div>
+            </motion.div>
           </div>
         </motion.div>
 

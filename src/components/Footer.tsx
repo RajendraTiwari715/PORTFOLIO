@@ -24,7 +24,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto">
           <motion.div 
             whileHover={{ y: -5 }}
             className="flex flex-col items-center p-6 bg-glassBg rounded-2xl border border-white/5"
@@ -35,19 +35,6 @@ const Footer = () => {
             <h3 className="text-white font-medium mb-2">Email</h3>
             <a href="mailto:rajendratiwari715@gmail.com" className="text-gray-400 hover:text-neonCyan transition-colors">
               rajendratiwari715@gmail.com
-            </a>
-          </motion.div>
-
-          <motion.div 
-            whileHover={{ y: -5 }}
-            className="flex flex-col items-center p-6 bg-glassBg rounded-2xl border border-white/5"
-          >
-            <div className="w-12 h-12 rounded-full bg-neonCyan/20 flex items-center justify-center mb-4">
-              <Phone className="text-neonCyan w-6 h-6" />
-            </div>
-            <h3 className="text-white font-medium mb-2">Phone</h3>
-            <a href="tel:+919407784182" className="text-gray-400 hover:text-neonCyan transition-colors">
-              +91 9407784182
             </a>
           </motion.div>
 
