@@ -39,17 +39,6 @@ export interface ProjectItem {
   featured?: boolean;
 }
 
-export interface CertificationItem {
-  id: string;
-  title: string;
-  issuer: string;
-  issueDate: string;
-  credentialId: string;
-  credentialUrl: string;
-  skills: string[];
-  iconType?: 'database' | 'code' | 'cloud' | 'shield' | 'terminal';
-}
-
 // --------------------------------------------------------------------------
 // 1. HACKATHON ACCOMPLISHMENTS (DISAHAVERSE WINNER SPOTLIGHT)
 // --------------------------------------------------------------------------
@@ -70,9 +59,9 @@ export const hackathonSpotlight: HackathonWinner = {
   ],
   track: "Rapid Problem Solving & Software Innovation",
   role: "Full Stack Developer",
-  problemStatement: "Building a functional healthcare referral and emergency coordination prototype under a 6-hour time constraint to streamline rural medical response.",
+  problemStatement: "Architecting and deploying a resilient, high-impact digital prototype under high-pressure time constraints to solve critical real-world coordination bottlenecks.",
   projectName: "Hellicare Emergency & Referral Coordination",
-  impactSummary: "Secured the WINNER position at the DISAHAVERSE Inter-College Hackathon held at Shri Balaji Disha College. In an intense 6-hour build sprint, our team designed, built, and presented the Hellicare prototype, demonstrating hands-on coding, teamwork, and quick problem-solving.",
+  impactSummary: "Clinched the WINNER position at the DISAHAVERSE Inter-College Hackathon held at Shri Balaji Disha College! A high-intensity 6-hour build sprint testing our limits, coding skills, and collaborative execution from brainstorming to final stage deployment.",
   techStack: [
     "React",
     "Vite",
@@ -194,45 +183,15 @@ export const projectsData: ProjectItem[] = [
 // --------------------------------------------------------------------------
 // 3. CERTIFICATIONS & CREDENTIALS
 // --------------------------------------------------------------------------
-export const certificationsData: CertificationItem[] = [
-  {
-    id: "meta-frontend-cert",
-    title: "Full Stack Software Engineering Specialization",
-    issuer: "Meta / Coursera",
-    issueDate: "2024",
-    credentialId: "META-FS-849201",
-    credentialUrl: "https://coursera.org",
-    skills: ["React.js", "JavaScript (ES6+)", "REST APIs", "UI/UX Architecture", "Version Control"],
-    iconType: "code"
-  },
-  {
-    id: "mysql-database-mastery",
-    title: "Relational Database Design & SQL Optimization",
-    issuer: "Oracle / HackerRank",
-    issueDate: "2024",
-    credentialId: "SQL-PERF-930124",
-    credentialUrl: "https://hackerrank.com",
-    skills: ["MySQL", "Query Optimization", "Database Indexing", "ACID Compliance", "Schema Design"],
-    iconType: "database"
-  },
-  {
-    id: "python-backend-cert",
-    title: "Python for High-Performance Backend & APIs",
-    issuer: "Coursera",
-    issueDate: "2023",
-    credentialId: "PY-API-551029",
-    credentialUrl: "https://coursera.org",
-    skills: ["Python", "FastAPI", "Data Structures", "Asynchronous Programming"],
-    iconType: "terminal"
-  },
-  {
-    id: "cloud-firebase-cert",
-    title: "Cloud Computing & Serverless Foundations",
-    issuer: "Google Cloud Skills Boost",
-    issueDate: "2023",
-    credentialId: "GCP-SB-119284",
-    credentialUrl: "https://cloudskillsboost.google",
-    skills: ["Firebase", "Cloud Storage", "Identity & Access Management", "Cloud Functions"],
-    iconType: "cloud"
-  }
-];
+export interface CertificationItem {
+  id: string;
+  title: string;
+  issuer: string;
+  issueDate: string;
+  credentialId: string;
+  credentialUrl: string;
+  skills: string[];
+  iconType?: 'database' | 'code' | 'cloud' | 'shield' | 'terminal';
+}
+
+export const certificationsData: CertificationItem[] = [];
