@@ -67,14 +67,11 @@ const Skills = () => {
             <span>Technical Capabilities</span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">
+          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-neonPurple via-white to-neonCyan">
               Technical Arsenal
             </span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg">
-            Core technologies and tools I work with daily to build full-stack web applications.
-          </p>
         </motion.div>
 
         {/* 3-Column Skill Category Grid */}

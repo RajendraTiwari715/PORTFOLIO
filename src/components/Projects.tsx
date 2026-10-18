@@ -35,14 +35,11 @@ const Projects: React.FC = () => {
             <span>Production Systems & Applications</span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">
+          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-2">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-neonCyan to-neonPurple">
               Featured Projects
             </span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg">
-            Explore a curated selection of full-stack platforms, rural healthcare coordination suites, livestock tracking systems, and enterprise ERP platforms.
-          </p>
 
           {/* Interactive Category Filter Pills */}
           <div className="flex flex-wrap items-center justify-center gap-2 mt-8">

@@ -56,18 +56,13 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/5 border border-white/10 text-gray-300 text-xs font-semibold mb-3">
-            <span>Background & Mindset</span>
-          </div>
 
-          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">
+
+          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-neonCyan via-white to-neonPurple">
               About Me
             </span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg">
-            A grounded look at my academic background, technical interests, and engineering approach.
-          </p>
         </motion.div>
 
         {/* Bio & Academic Profile Row */}

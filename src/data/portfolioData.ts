@@ -89,7 +89,7 @@ export const hackathonSpotlight: HackathonWinner = {
     { label: "Final Result", value: "WINNER 🏆" },
     { label: "Build Sprint", value: "6 Hours" },
     { label: "Team Synergy", value: "100%" },
-    { label: "Host College", value: "Balaji Disha" }
+    { label: "Host College", value: "Shri Balaji Disha College" }
   ],
   keyAchievements: [
     "Secured the WINNER title out of competitive inter-college engineering teams",

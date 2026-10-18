@@ -34,7 +34,7 @@ const Navbar = () => {
               className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover border-2 border-neonCyan shadow-[0_0_10px_rgba(0,240,255,0.5)] hover:shadow-[0_0_15px_rgba(0,240,255,0.8)] transition-shadow duration-300"
             />
             <span className="hidden sm:inline-block font-bold text-sm tracking-wide text-white hover:text-neonCyan transition-colors">
-              Rajendra<span className="text-neonCyan">.dev</span>
+              Rajendra Tiwari
             </span>
           </div>
           

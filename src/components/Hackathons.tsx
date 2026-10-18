@@ -41,14 +41,11 @@ const Hackathons: React.FC = () => {
             <Sparkles className="w-3.5 h-3.5 text-neonCyan" />
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">
+          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-neonCyan to-neonPurple">
               Hackathon Wins & Spotlight
             </span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg">
-            Practical problem solving, rapid web development, and effective teamwork delivered during competitive inter-college hackathons.
-          </p>
         </motion.div>
 
         {/* --------------------------------------------------------------- */}
@@ -239,13 +236,10 @@ const Hackathons: React.FC = () => {
                   </div>
 
                   {/* Bottom Caption Pill */}
-                  <div className="absolute bottom-3 left-3 right-3 z-10 flex items-center justify-between">
+                  <div className="absolute bottom-3 left-3 z-10 flex items-center">
                     <span className="text-xs font-bold text-white px-3 py-1 rounded-lg bg-black/75 backdrop-blur-md border border-white/15 flex items-center gap-1.5 shadow-md">
                       <Trophy className="w-3.5 h-3.5 text-yellow-400" />
                       Winning Moment at Stage
-                    </span>
-                    <span className="text-[11px] font-mono text-neonCyan px-2.5 py-1 rounded-lg bg-black/75 backdrop-blur-md border border-white/15">
-                      Shri Balaji Disha College
                     </span>
                   </div>
                 </a>
@@ -259,9 +253,6 @@ const Hackathons: React.FC = () => {
                   <span className="px-3 py-1 rounded-full bg-neonPurple/20 text-neonPurple text-xs font-bold border border-neonPurple/30">
                     Team: {hackathonSpotlight.teamName}
                   </span>
-                  <span className="px-3 py-1 rounded-full bg-white/5 text-gray-300 text-xs font-medium border border-white/10">
-                    Shri Balaji Disha College
-                  </span>
                 </div>
               </div>
 
@@ -274,7 +265,7 @@ const Hackathons: React.FC = () => {
                       whileHover={{ scale: 1.03 }}
                       className="p-4 rounded-xl bg-glassBg border border-white/10 hover:border-neonCyan/40 transition-all duration-300 flex flex-col justify-center"
                     >
-                      <span className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-neonCyan to-white">
+                      <span className="text-base sm:text-xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-neonCyan to-white leading-snug break-words">
                         {stat.value}
                       </span>
                       <span className="text-xs text-gray-400 font-medium mt-1">

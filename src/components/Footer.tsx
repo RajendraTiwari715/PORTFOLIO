@@ -51,13 +51,10 @@ const Footer = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-white"
+            className="text-4xl md:text-5xl font-extrabold tracking-tight text-white"
           >
             Let's Connect & <span className="text-transparent bg-clip-text bg-gradient-to-r from-neonCyan to-neonPurple">Collaborate.</span>
           </motion.h2>
-          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">
-            I am always open to discussing new opportunities, full-stack projects, or technical conversations. Feel free to reach out.
-          </p>
         </div>
 
         {/* Contact Grid: Details + Working Form */}

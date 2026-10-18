@@ -40,16 +40,8 @@ const Hero = () => {
 
         {/* Text Content */}
         <div className="flex-1 text-center lg:text-left">
-          
-          {/* Subtitle Tag */}
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-gray-300 text-xs font-mono tracking-wider mb-5"
-          >
-            <span>Welcome to my portfolio</span>
-          </motion.div>
+
+
 
           {/* Name Header */}
           <motion.h1
@@ -81,7 +73,7 @@ const Hero = () => {
             transition={{ duration: 0.7, delay: 0.35 }}
             className="text-lg sm:text-xl text-gray-300 mb-7 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal"
           >
-            Turning complex problems into elegant, scalable, and responsive web solutions.
+            "Turning complex problems into elegant, scalable, and responsive web solutions with modern technologies and clean architecture."
           </motion.p>
 
           {/* Clean Tech Stack Badges */}
@@ -156,14 +148,14 @@ const Hero = () => {
         {/* Profile Picture Showcase */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ 
-            opacity: 1, 
+          animate={{
+            opacity: 1,
             scale: 1,
             y: [0, -12, 0]
           }}
-          transition={{ 
-            duration: 0.9, 
-            type: "spring", 
+          transition={{
+            duration: 0.9,
+            type: "spring",
             bounce: 0.3,
             y: {
               duration: 4.5,
@@ -175,14 +167,14 @@ const Hero = () => {
         >
           <div className="relative group perspective-1000">
             {/* Animated glowing border backdrop */}
-            <motion.div 
+            <motion.div
               animate={{ rotate: 360 }}
               transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
               className="absolute -inset-2.5 rounded-[2.5rem] bg-gradient-to-r from-neonCyan via-neonPurple to-neonCyan opacity-50 blur-xl group-hover:opacity-80 transition duration-1000"
             />
-            
+
             {/* Image Container with 3D hover effect */}
-            <motion.div 
+            <motion.div
               whileHover={{ scale: 1.02, rotateX: 3, rotateY: -3 }}
               className="relative w-64 h-[22rem] sm:w-[300px] sm:h-[400px] md:w-[330px] md:h-[430px] rounded-[2rem] overflow-hidden border-2 border-white/20 bg-glassBg shadow-[0_0_40px_rgba(176,38,255,0.3)]"
               style={{ transformStyle: 'preserve-3d' }}
@@ -192,7 +184,7 @@ const Hero = () => {
                 alt="Rajendra Tiwari - Full-Stack Developer"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
               />
-              
+
               <div className="absolute inset-0 bg-gradient-to-t from-darkBg/50 via-transparent to-white/10 pointer-events-none" />
             </motion.div>
           </div>
