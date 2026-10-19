@@ -40,12 +40,12 @@ export interface ProjectItem {
 }
 
 // --------------------------------------------------------------------------
-// 1. HACKATHON ACCOMPLISHMENTS (DISAHAVERSE WINNER SPOTLIGHT)
+// 1. HACKATHON ACCOMPLISHMENTS (DISHAVERSE WINNER SPOTLIGHT)
 // --------------------------------------------------------------------------
 export const hackathonSpotlight: HackathonWinner = {
-  id: "disahaverse-winner",
-  title: "WINNER - DISAHAVERSE Inter-College Hackathon",
-  hackathonName: "DISAHAVERSE Inter-College Hackathon",
+  id: "dishaverse-winner",
+  title: "WINNER - DISHAVERSE Inter-College Hackathon",
+  hackathonName: "DISHAVERSE Inter-College Hackathon",
   badge: "🏆 WINNER",
   venue: "Shri Balaji Disha College",
   sprintDuration: "6-Hour Intense Build Sprint",
@@ -61,7 +61,7 @@ export const hackathonSpotlight: HackathonWinner = {
   role: "Full Stack Developer",
   problemStatement: "Architecting and deploying a resilient, high-impact digital prototype under high-pressure time constraints to solve critical real-world coordination bottlenecks.",
   projectName: "Hellicare Emergency & Referral Coordination",
-  impactSummary: "Clinched the WINNER position at the DISAHAVERSE Inter-College Hackathon held at Shri Balaji Disha College! A high-intensity 6-hour build sprint testing our limits, coding skills, and collaborative execution from brainstorming to final stage deployment.",
+  impactSummary: "Clinched the WINNER position at the DISHAVERSE Inter-College Hackathon held at Shri Balaji Disha College! A high-intensity 6-hour build sprint testing our limits, coding skills, and collaborative execution from brainstorming to final stage deployment.",
   techStack: [
     "React",
     "Vite",

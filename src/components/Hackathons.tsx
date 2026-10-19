@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion';
-import { 
-  Trophy, 
-  Github, 
-  ExternalLink, 
-  Award, 
-  Sparkles, 
-  CheckCircle2, 
-  Zap, 
-  Users, 
+import {
+  Trophy,
+  Github,
+  ExternalLink,
+  Award,
+  Sparkles,
+  CheckCircle2,
+  Zap,
+  Users,
   ShieldCheck,
   Target,
   Clock,
@@ -25,7 +25,7 @@ const Hackathons: React.FC = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -49,7 +49,7 @@ const Hackathons: React.FC = () => {
         </motion.div>
 
         {/* --------------------------------------------------------------- */}
-        {/* MAIN SPOTLIGHT BENTO CARD (DISAHAVERSE WINNER)                  */}
+        {/* MAIN SPOTLIGHT BENTO CARD (DISHAVERSE WINNER)                   */}
         {/* --------------------------------------------------------------- */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -60,12 +60,12 @@ const Hackathons: React.FC = () => {
         >
           {/* Top highlight glow banner */}
           <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-neonCyan via-neonPurple to-neonCyan" />
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            
+
             {/* Left Content Column (7 cols) */}
             <div className="lg:col-span-7 flex flex-col justify-between">
-              
+
               {/* Meta Badges */}
               <div className="flex flex-wrap items-center gap-2.5 mb-5">
                 <span className="px-3.5 py-1.5 rounded-full text-xs font-extrabold bg-yellow-500/15 text-yellow-300 border border-yellow-500/40 flex items-center gap-1.5 shadow-[0_0_15px_rgba(234,179,8,0.3)]">
@@ -106,7 +106,7 @@ const Hackathons: React.FC = () => {
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {hackathonSpotlight.teammates.map((member) => (
-                    <span 
+                    <span
                       key={member}
                       className="px-2.5 py-1 text-xs font-medium rounded-lg bg-black/40 text-gray-200 border border-white/15"
                     >
@@ -156,7 +156,7 @@ const Hackathons: React.FC = () => {
                 </span>
                 <div className="flex flex-wrap gap-2">
                   {hackathonSpotlight.techStack.map((tech) => (
-                    <span 
+                    <span
                       key={tech}
                       className="px-3 py-1 text-xs font-medium rounded-lg bg-neonCyan/10 text-neonCyan border border-neonCyan/25 hover:border-neonCyan hover:bg-neonCyan/20 transition-all duration-200"
                     >
@@ -206,27 +206,27 @@ const Hackathons: React.FC = () => {
 
             {/* Right Media & Stats Column (5 cols) */}
             <div className="lg:col-span-5 flex flex-col gap-6">
-              
+
               {/* Media Card Showcase with Real Stage Photo */}
               <div className="relative rounded-2xl overflow-hidden border border-white/20 bg-gradient-to-br from-black/90 via-slate-900 to-purple-950/50 shadow-2xl group/media">
-                
+
                 {/* Stage Photo with Hover Zoom & Clickable LinkedIn Link */}
-                <a 
+                <a
                   href={hackathonSpotlight.certificateUrl}
-                  target="_blank" 
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="block relative overflow-hidden group/img cursor-pointer"
                   title="Click to view winning post on LinkedIn"
                 >
                   <img
                     src={hackathonSpotlight.imageUrl}
-                    alt="DISAHAVERSE Hackathon Winner Team The Logic Syndicate at Shri Balaji Disha College"
+                    alt="DISHAVERSE Hackathon Winner Team The Logic Syndicate at Shri Balaji Disha College"
                     className="w-full aspect-[4/3] object-cover object-center group-hover/img:scale-105 transition-transform duration-700 ease-out"
                   />
-                  
+
                   {/* Subtle Gradient & Hover Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-darkBg via-darkBg/10 to-transparent opacity-50 group-hover/img:opacity-20 transition-opacity duration-300" />
-                  
+
                   {/* Floating Top-Right LinkedIn Badge */}
                   <div className="absolute top-3 right-3 z-10">
                     <span className="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-bold rounded-full bg-darkBg/80 backdrop-blur-md text-neonCyan border border-neonCyan/40 shadow-lg group-hover/img:bg-neonCyan group-hover/img:text-darkBg transition-all duration-300">

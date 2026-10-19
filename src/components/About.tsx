@@ -34,7 +34,7 @@ const About = () => {
     {
       icon: <Trophy className="w-5 h-5 text-yellow-400" />,
       title: "Hackathon Winner",
-      subtitle: "DISAHAVERSE Inter-College"
+      subtitle: "DISHAVERSE Inter-College"
     }
   ];
 

@@ -19,10 +19,10 @@ const Experience = () => {
     {
       role: "Full-Stack Project Developer",
       organization: "Academic Projects & Hackathons",
-      project: "Web Applications & DISAHAVERSE Hackathon",
+      project: "Web Applications & DISHAVERSE Hackathon",
       type: "Full-Stack Development",
       bullets: [
-        "Won the WINNER title at the DISAHAVERSE Inter-College Hackathon with team 'THE LOGIC SYNDICATE' in a 6-hour build sprint.",
+        "Won the WINNER title at the DISHAVERSE Inter-College Hackathon with team 'THE LOGIC SYNDICATE' in a 6-hour build sprint.",
         "Developed Hellicare, a prototype for rural healthcare referral coordination, facility matching, and ambulance tracking.",
         "Engineered PashuDhan, a gaushala monitoring and stray livestock management application to keep track of stray cattle and shelter capacity.",
         "Integrated dynamic RESTful APIs and browser local storage to ensure smooth offline data persistence and responsive user interfaces."
